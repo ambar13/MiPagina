@@ -5,8 +5,8 @@
   right: 28px;
   height: 2px;
   width: 24px;
-  background: #d0d0d0;
-}
+  background: #AAA5A6;
+} 
 
 .main-phone::before, .main-phone::after {
   position: absolute;
@@ -14,18 +14,19 @@
   height: 2px;
   width: 24px;
   display: block;
-  background: #d0d0d0;
-}
+  background: #AAA5A6;
+} 
 
+/* espaciado entre la imagen del menu desplegable */
 .main-phone::before {
-  top: -8px;
+  top: -5px;
 }
 
 .main-phone::after {
-  top: 8px;
+  top: 5px;
 }
 
-/*genral*/
+/*general*/
 * {
   padding: 0;
   margin: 0;
@@ -75,6 +76,16 @@ nav {
 
 }
 
+/* seccion */
+.sect {
+  width: 100%;
+}
+.text-page {
+  line-height:15px;
+  color: #131313;
+}
+
+
 .boton {
   background-color: #5e2129;
   border-radius: 3px;
@@ -99,8 +110,11 @@ ul li {
   padding: 5px 15px;
 }
 
+
+
+
 @media (min-width: 768px) {
-   .col-section {
+   .sect {
     width: 50%;
     float: left;
   }
@@ -141,3 +155,6 @@ footer {
 	height: 80px;
 }
 
+.foot {
+ padding-top: 35px;
+}
