@@ -1,0 +1,143 @@
+/* menú desplegable */
+.main-phone {
+  position: absolute;
+  top: 25px;
+  right: 28px;
+  height: 2px;
+  width: 24px;
+  background: #d0d0d0;
+}
+
+.main-phone::before, .main-phone::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 24px;
+  display: block;
+  background: #d0d0d0;
+}
+
+.main-phone::before {
+  top: -8px;
+}
+
+.main-phone::after {
+  top: 8px;
+}
+
+/*genral*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+
+/*header*/
+.headr {
+  background-color: #383e42;
+  color: white;
+}
+
+.cont {
+  font-size: 17px;
+  float: left;
+  padding-left: 35px;
+}
+
+nav {
+  padding: 14px;
+  overflow: hidden;
+}
+
+.conLeft{
+  font-size: 17px;
+  float: left;
+  padding-left: 35px;
+}
+
+.conRight {
+  float: right;
+}
+
+.banner {
+  background-image: url("../assets/images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: 350px;
+
+}
+
+.boton {
+  background-color: #5e2129;
+  border-radius: 3px;
+  color: white;
+  width: 120px;
+  height: 40px;
+  margin: 16px 0;
+
+}
+
+.view-phone {
+  display: block;
+}
+
+.view-desktop {
+  display: none;
+}
+
+
+ul li {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+@media (min-width: 768px) {
+   .col-section {
+    width: 50%;
+    float: left;
+  }
+
+  section {
+    overflow: auto;
+    display: flex;
+  }
+
+  .text-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+
+  
+  .view-phone {
+    display: none;
+  }
+  
+  .view-desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  section{
+    margin: 0 10rem;
+  }
+}
+
+footer {
+	background-color: #383e42;
+	color: white;
+	text-align: center;
+	height: 80px;
+}
+
